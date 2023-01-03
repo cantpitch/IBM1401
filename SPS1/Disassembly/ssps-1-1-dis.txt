@@ -1,0 +1,79 @@
+               JOB  SSPS-1-1
+               CTL  6611
+               ORG  76
+   76          DA   1X1
+               ORG  81
+   85          DCW  #5
+   88          DSA  15999                        DCW  'I9I'
+   99          DCW  @65ULB100000@
+               ORG  101
+  103          DCW  @ 31@
+  114          DCW  #11
+  117          DCW  #3
+  121          DCW  @0332@
+  122          DCW  @0@
+  134          DCW  #12
+  137          DCW  #3
+  139          DCW  @79@
+  140          R    458                          DCW  '1458'
+  144          P    718                          DCW  '4718'
+  149          DCW  @71@
+  155          DCW  @521478@
+  157          DCW  @81@
+  159          DCW  @21@
+  164          DCW  #5
+  165          DCW  #1
+  166          RP                                DCW  '5'
+  169          DCW  #3
+  170          CS   57                           DCW  '/057'
+  174          SW   1,40                         DCW  ',001040'
+  181          SW   47,54                        DCW  ',047054'
+  188          SW   61,72                        DCW  ',061072'
+  195          R    40                           DCW  '1040'
+  200          DCW  @- @
+  231          DCW  @NOTES        1 - PAGE/LINE SEQ.@
+               ORG  244
+  254          DCW  @4 - OP.CODE@
+               ORG  274
+  292          DCW  @7 - UNLIKELY LENGTH@
+               ORG  333
+  362          DCW  @2 - COUNT                     @
+  392          DCW  @5 - A-OPERAND                 @
+  412          DCW  @8 - LABEL NOT STORED@
+  442          DCW  @3 - LABEL                     @
+  472          DCW  @6 - B-OPERAND                 @
+  484          DCW  @9 - END CARD@
+  514          DCW  @PG LIN CT  LABEL  OP  A-OPERAN@
+  544          DCW  @D    B-OPERAND   D     COMMENT@
+  569          DCW  @S      LOC          NOTES@
+  570          H    578                          DCW  '.578'
+  574          B    654                          DCW  'B654'
+  578          W                                 DCW  '2'
+  579          CS   299                          DCW  '/299'
+  583          MCW  412,293                      DCW  'M412293'
+  590          MCW                               DCW  'M'
+  591          MCW                               DCW  'M'
+  592          W                                 DCW  '2'
+  593          CS   299                          DCW  '/299'
+  597          MCW  484,285                      DCW  'M484285'
+  604          MCW                               DCW  'M'
+  605          MCW                               DCW  'M'
+  606          W                                 DCW  '2'
+  607          MZ   92,299                       DCW  'Y092299'
+  614          MCW  299                          DCW  'M299'
+  618          W                                 DCW  '2'
+  619          CS   299                          DCW  '/299'
+  623          MCW  569,285                      DCW  'M569285'
+  630          MCW                               DCW  'M'
+  631          MCW                               DCW  'M'
+  632          W                                 DCW  '2'
+  633          MZ   92,299                       DCW  'Y092299'
+  640          MCW  299                          DCW  'M299'
+  644          CC   S                            DCW  'FS'
+  646          W                                 DCW  '2'
+  647          MN   102,103                      DCW  'D102103'
+  654          SW   2364                         DCW  ',L64'
+  658          MZ   91,2372                      DCW  'Y091L72'
+  665          MCW  2372                         DCW  'ML72'
+  669          R    40                           DCW  '1040'
+  673          DCW  #1
